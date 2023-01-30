@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-y: scroll;
+    background-color: #fffefc;
+    color: #444;
+}
+
+body {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 10px;
+    font: 14px/1.5 monospace;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: #24a5d4;
+}
+
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+header {
+    padding-bottom: 20px;
+}
+
+#title {
+    float: left;
+}
+
+#web-loop {
+    float: right;
+}
+
+#main, #prev, #next {
+    color: #24a5d4;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+article {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
