@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>web-loops</title>
-        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
             <p id="title"><b>Tufts Loop</b></p>
-            <nav id="web-loop" site="your-sites-name">
+            <nav class="web-loop" id="tufts-loop" site="your-sites-name">
                 <a id="main">Tufts Loop</a>:
                 <a id="prev">Prev</a>.
                 <a id="next">Next</a>.
@@ -45,7 +45,7 @@
                     javascript file and the following navigation element to
                     your website:</p>
                     <pre><code>
-&lt;nav id="web-loop" name="tufts-loop"&gt;
+&lt;nav id="tufts-loop" name="tufts-loop"&gt;
     &lt;a id="main"&gt;Tufts Loop&lt;/a&gt;:
     &lt;a id="prev"&gt;Prev&lt;/a&gt;.
     &lt;a id="next"&gt;Next&lt;/a&gt;.
@@ -57,7 +57,7 @@
                 </li>
                 <li>
                     <p>Make a pull request
-                    <a href="">here</a>,
+                    <a href="https://github.com/c2000e/web-loops">here</a>,
                     adding your information to the `tufts-loop.json` file. Your
                     site's name in the json file must match the 'name'
                     parameter of the &lt;nav&gt; component.</p>
@@ -91,8 +91,10 @@
             </ul>
         </article>
         <footer>
-            <p>Copyright &copy; 2023 Christian Ermann.</p>
-            <script src="/web-loop.js"></script>
+            <p>Copyright &copy; 2023
+            <a href="https://www.christianermann.dev">Christian Ermann</a>.
+            </p>
+            <script src="tufts-loop.js"></script>
         </footer>
     </body>
 </html>
