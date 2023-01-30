@@ -5,8 +5,6 @@
 
 html {
     overflow-y: scroll;
-    background-color: #fffefc;
-    color: #444;
 }
 
 body {
@@ -60,4 +58,14 @@ article {
 article p {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+li {
+    margin-left: 2em;
+}
+
+pre {
+    padding-left: 2em;
+    overflow-x: auto;
+    border-style: solid;
 }
