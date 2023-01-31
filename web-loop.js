@@ -4,13 +4,13 @@ const WEB_LOOP_DATA_URL = `https://raw.githubusercontent.com/c2000e/web-loops/ma
 window.onload = function() {
 
     const webLoop = document.getElementById("web-loop");
-    const thisSite = webLoop.getAttribute("site");
+    const thisSiteName = webLoop.getAttribute("site-name");
 
     fetch(WEB_LOOP_DATA_URL)
       .then((response) => response.json())
       .then((sites) => {
           const thisSiteIndex = sites.findIndex(
-              (site) => site.name === thisSite
+              (site) => site.name === thisSiteName
           );
 
           let prevSiteIndex = thisSiteIndex - 1;
