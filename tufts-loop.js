@@ -1,7 +1,7 @@
 
 const WEB_LOOP_DATA_URL = `https://raw.githubusercontent.com/c2000e/web-loops/main/tufts-loop.json`;
 
-window.onload = function() {
+function initTuftsLoop() {
 
     const webLoop = document.getElementById("tufts-loop");
     const thisSiteName = webLoop.getAttribute("site-name");

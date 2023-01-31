@@ -98,6 +98,7 @@
                 const TUFTS_LOOP_DATA_URL = `https://raw.githubusercontent.com/c2000e/web-loops/main/tufts-loop.json`;
                 const siteList = document.getElementById("site-list");
                 window.onload = function() {
+                  initTuftsLoop();
                   fetch(TUFTS_LOOP_DATA_URL)
                     .then((response) => response.json())
                     .then((sites) => {
