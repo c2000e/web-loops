@@ -23,10 +23,6 @@ window.onload = function() {
           const prevLink = webLoop.querySelector("#prev");
           const nextLink = webLoop.querySelector("#next");
 
-          console.log(thisSiteIndex);
-          console.log(prevSiteIndex);
-          console.log(nextSiteIndex);
-
           mainLink.href = sites[0].url;
           prevLink.href = sites[prevSiteIndex].url;
           nextLink.href = sites[nextSiteIndex].url;
