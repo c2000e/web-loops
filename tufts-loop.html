@@ -85,9 +85,8 @@
                     <p>Congratulations! You're part of Tufts Loop.</p>
                 </li>
             </ol>
-            <h2>Tufts Loop Members</h2>
-            <ul id="members">
-                <li></li>
+            <h2>Tufts Loop Sites</h2>
+            <ul id="site-list">
             </ul>
         </article>
         <footer>
@@ -95,6 +94,25 @@
             <a href="https://www.christianermann.dev">Christian Ermann</a>.
             </p>
             <script src="tufts-loop.js"></script>
+            <script>
+                const TUFTS_LOOP_DATA_URL = `https://raw.githubusercontent.com/c2000e/web-loops/main/tufts-loop.json`;
+                const siteList = document.getElementById("site-list");
+                window.onload = function() {
+                  fetch(TUFTS_LOOP_DATA_URL)
+                    .then((response) => response.json())
+                    .then((sites) => {
+                        sites.forEach(function(site) {
+                            const listElement = document.createElement("li");
+                            const link = document.createElement("a");
+                            const linkText = document.createTextNode(site.name);
+                            link.href = site.url
+                            link.appendChild(linkText);
+                            listElement.appendChild(link);
+                            siteList.appendChild(listElement);
+                        });
+                    });
+                }
+            </script>
         </footer>
     </body>
 </html>
